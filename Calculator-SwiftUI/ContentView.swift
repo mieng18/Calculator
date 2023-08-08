@@ -7,15 +7,36 @@
 
 import SwiftUI
 
+enum CalculatorButton: String {
+    case one
+    case two
+    case three
+    case four
+    case five
+    case six
+    case seven
+    case eight
+    case nine
+    case zero
+    case add
+    case subtract
+    case divide
+    case multiply
+    case equal
+    case clear
+    case decimal
+    case percent
+    case negtive
+    
+}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
+            
+            
         }
-        .padding()
     }
 }
 
