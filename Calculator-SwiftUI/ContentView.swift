@@ -18,7 +18,7 @@ enum CalculatorButton: String {
     case eight = "8"
     case nine = "9"
     case zero = "0"
-    case add = ""
+    case add = "+"
     case subtract = "-"
     case divide = "/"
     case multiply = "x"
@@ -28,7 +28,20 @@ enum CalculatorButton: String {
     case percent = "%"
     case negtive = "-/+"
     
+    var buttonColor: Color {
+        switch self{
+            case .add, .subtract,.multiply,.divide,.equal:
+            return Color.blue0060E5
+            case .clear ,.negtive,.percent:
+            return Color.gray363E4D
+            default:
+            return .darkGray242933
+        }
+    }
+    
 }
+
+
 
 struct ContentView: View {
     
@@ -45,6 +58,9 @@ struct ContentView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             
             VStack{
+                
+                Spacer()
+                
                 HStack {
                     Spacer()
                     Text("0")
@@ -63,10 +79,10 @@ struct ContentView: View {
                             } label: {
                                 Text(item.rawValue)
                                     .font(.system(size: 32))
-                                    .frame(width: buttonWidth(item: item), height: 70)
-                                    .background(Color.orange)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(35)
+                                    .frame(width: buttonWidth(item: item), height: buttonHeight())
+                                    .background(item.buttonColor)
+                                    .foregroundColor(.textCBE1FF)
+                                    .cornerRadius((buttonWidth(item: item))/2)
                             }
 
                         }
@@ -78,6 +94,10 @@ struct ContentView: View {
     }
     
     func buttonWidth(item: CalculatorButton) -> CGFloat {
+        return (UIScreen.main.bounds.width - (5*12))/4
+    }
+    
+    func buttonHeight() -> CGFloat {
         return (UIScreen.main.bounds.width - (5*12))/4
     }
 }
