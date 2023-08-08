@@ -14,6 +14,7 @@
 		CAC73FD42A81F9DB006B53DF /* Calculator_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC73FD32A81F9DB006B53DF /* Calculator_SwiftUITests.swift */; };
 		CAC73FDE2A81F9DB006B53DF /* Calculator_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC73FDD2A81F9DB006B53DF /* Calculator_SwiftUIUITests.swift */; };
 		CAC73FE02A81F9DB006B53DF /* Calculator_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC73FDF2A81F9DB006B53DF /* Calculator_SwiftUIUITestsLaunchTests.swift */; };
+		CAC73FEE2A82B811006B53DF /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC73FED2A82B811006B53DF /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CAC73FD92A81F9DB006B53DF /* Calculator-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calculator-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC73FDD2A81F9DB006B53DF /* Calculator_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		CAC73FDF2A81F9DB006B53DF /* Calculator_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAC73FED2A82B811006B53DF /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		CAC73FC12A81F9D8006B53DF /* Calculator-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CAC73FEC2A82B7F5006B53DF /* Extensions */,
 				CAC73FC22A81F9D8006B53DF /* Calculator_SwiftUIApp.swift */,
 				CAC73FC42A81F9D8006B53DF /* ContentView.swift */,
 				CAC73FC62A81F9DB006B53DF /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				CAC73FDF2A81F9DB006B53DF /* Calculator_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "Calculator-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		CAC73FEC2A82B7F5006B53DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CAC73FED2A82B811006B53DF /* Color+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				CAC73FC52A81F9D8006B53DF /* ContentView.swift in Sources */,
 				CAC73FC32A81F9D8006B53DF /* Calculator_SwiftUIApp.swift in Sources */,
+				CAC73FEE2A82B811006B53DF /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
